@@ -22,3 +22,19 @@ $(document).on('click', '.menu-icon', function () {
 
         
         });
+
+
+        $(function() {
+            var body = $("body ");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+      
+                if (scroll >= 100) {
+                    body.addClass("stick");
+                } else {
+                    body.removeClass("stick");
+                }
+            });
+        });
+      
+      

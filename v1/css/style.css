@@ -22,6 +22,41 @@ header .menu-icon {
   display: inline-block;
 }
 
+@media only screen and (max-width: 768px) {
+  header .menu-icon {
+    top: 27px;
+  }
+  header .menu-icon img {
+    height: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .logo .desktop-logo {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .logo .desktop-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .logo .mobile-logo {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .logo .mobile-logo {
+    display: none;
+  }
+}
+
 header .menu-toggle {
   width: 310px;
   position: fixed;
@@ -68,6 +103,13 @@ header .newsletter-form {
   margin: 50px auto;
 }
 
+@media only screen and (max-width: 480px) {
+  header .newsletter-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 header .newsletter-form h2 {
   font-family: 'helveticabold';
   font-style: normal;
@@ -77,12 +119,39 @@ header .newsletter-form h2 {
   color: #185F7D;
 }
 
+@media only screen and (max-width: 768px) {
+  header .newsletter-form h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .newsletter-form h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .newsletter-form p {
+    font-size: 12px;
+  }
+}
+
 header .newsletter-form form {
   overflow: hidden;
   height: 40px;
   width: 400px;
   margin: 0 auto 15px;
   position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  header .newsletter-form form {
+    width: 100%;
+  }
 }
 
 header .newsletter-form form input {
@@ -262,16 +331,72 @@ p {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .heading-title {
   margin-bottom: 40px;
+  position: relative;
+}
+
+.heading-title:before {
+  content: '';
+  border-bottom: solid 1.5px #185F7D;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-title {
+    margin-bottom: 10px;
+  }
 }
 
 .heading-title h2 {
   font-family: 'helveticabold';
   font-style: normal;
+  position: relative;
   font-size: 36px;
   line-height: 41px;
   color: #185F7D;
+  background: #fff;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-title h2 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-title h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .sub-heading h3 {
@@ -284,12 +409,40 @@ p {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+  .sub-heading h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sub-heading h3 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
 .sub-heading p {
   font-size: 20px;
   line-height: 23px;
   margin-bottom: 20px;
   color: #000;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .sub-heading p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sub-heading p {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .bottom-widget ul li {
@@ -312,6 +465,18 @@ p {
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 768px) {
+  .video-article iframe {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .video-article iframe {
+    height: 210px;
+  }
+}
+
 .news-item {
   margin-bottom: 30px;
   border: 1px solid rgba(24, 95, 125, 0.64);
@@ -323,6 +488,13 @@ p {
 
 .news-item.no-innerpadding .coontent-wrapper {
   padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .news-item {
+    border: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .news-item .article-image img {
@@ -341,6 +513,12 @@ p {
 
 .news-item .coontent-wrapper {
   padding: 17px 15px 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .news-item .coontent-wrapper {
+    padding: 12px 0 12px 0;
+  }
 }
 
 .chart-header {
@@ -434,6 +612,18 @@ a {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+  .theme-btn {
+    min-width: 130px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .theme-btn {
+    min-width: 110px;
+  }
+}
+
 .theme-btn:hover {
   color: #fff;
   background: #114961;
@@ -444,9 +634,22 @@ a {
   flex-wrap: nowrap;
 }
 
+@media only screen and (max-width: 768px) {
+  .heading-withbutton {
+    display: block;
+  }
+}
+
 .heading-withbutton .heading-left {
   max-width: 75%;
   flex: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-withbutton .heading-left {
+    max-width: 100%;
+    flex: 100%;
+  }
 }
 
 .heading-withbutton .button-right {
@@ -456,6 +659,16 @@ a {
   justify-content: flex-end;
   text-align: right;
   display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-withbutton .button-right {
+    max-width: 100%;
+    flex: 100%;
+    position: absolute;
+    right: 15px;
+    bottom: 7px;
+  }
 }
 
 .section-padding80 {
@@ -476,6 +689,12 @@ footer {
   color: #fff;
 }
 
+@media only screen and (max-width: 480px) {
+  footer {
+    margin-top: 40px;
+  }
+}
+
 footer .paragraph {
   padding-right: 70px;
 }
@@ -491,6 +710,13 @@ footer h3 {
   font-family: 'helveticabold';
   margin-bottom: 15px;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  footer h3 {
+    font-size: 22px;
+    line-height: 25px;
+  }
 }
 
 footer .links-footer ul li {
@@ -519,6 +745,13 @@ footer .links-footer ul li a {
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 768px) {
+  footer .links-footer ul li a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 footer .links-footer ul li:hover a {
   color: #fff;
 }
@@ -537,4 +770,37 @@ footer .social-links ul li {
 footer .social-links ul li a i {
   font-size: 32px;
   color: #fff;
+}
+
+.stick .sticky-share {
+  position: fixed;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.sticky-share {
+  transition: all ease 0.5s;
+  right: 0;
+  bottom: 40vh;
+  border: 1px solid #D0D0D0;
+  box-sizing: border-box;
+  border-radius: 12px 0px 0px 12px;
+  background: #F7F7F7;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.sticky-share ul li {
+  padding: 15px;
+}
+
+.sticky-share ul li a {
+  color: #185F7D;
+  font-size: 26px;
 }

@@ -7,6 +7,9 @@ footer {
     background: $themecolor;
     padding: 30px 0;
     color: $white;
+    @media only screen and (max-width: 480px) {
+        margin-top: 40px;
+    }
     .paragraph{
         padding-right: 70px;
     }
@@ -22,6 +25,11 @@ footer {
 
         margin-bottom: 15px;
         color: $white;
+        @media only screen and (max-width: 768px) {
+            font-size: 22px;
+            line-height: 25px;
+        }
+@media only screen and (max-width: 480px) {}
     }
     .links-footer{
         ul{
@@ -46,6 +54,10 @@ footer {
                     color: $white;
                     display: inline-block;
                     vertical-align: middle;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
                 }
                 &:hover{
                     a{
@@ -69,6 +81,44 @@ footer {
                         color:  $white;
                     }
                 }
+            }
+        }
+    }
+}
+
+.stick{
+    .sticky-share{
+        position: fixed;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    }
+}
+
+.sticky-share{
+    transition: all ease 0.5s;
+    right: 0;
+    bottom: 40vh;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 12px 0px 0px 12px;
+    background: #F7F7F7;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+
+    
+
+ul{
+        li{
+            padding: 15px;
+            a{
+                color: $themecolor;
+                font-size: 26px;
             }
         }
     }
